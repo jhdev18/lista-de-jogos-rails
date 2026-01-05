@@ -1,6 +1,6 @@
 class JogosController < ApplicationController
   before_action :set_jogo, only: %i[ show edit update destroy ]
-
+  belongs_to :developer
   # GET /jogos or /jogos.json
   def index
     @jogos = Jogo.all
